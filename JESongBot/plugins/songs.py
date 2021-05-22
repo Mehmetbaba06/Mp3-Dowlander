@@ -1,6 +1,3 @@
-# Plugin by @Mr_Dark_Prince
-# Infinity BOTs <https://t.me/Infinity_BOTs>
-
 import os
 import requests
 import aiohttp
@@ -15,8 +12,8 @@ def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
-@app.on_message(filters.command('song'))
-def song(client, message):
+@app.on_message(filters.command('bul'))
+def bul(client, message):
 
     user_id = message.from_user.id 
     user_name = message.from_user.first_name 
@@ -26,7 +23,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Finding the song...')
+    m = message.reply('🔎 Şarkıyı bulma...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -44,11 +41,11 @@ def song(client, message):
         yt = YouTube(link)
     except Exception as e:
         m.edit(
-            "❌ Found Nothing.\n\nTry another keywork or maybe spell it properly."
+            "❌ Hiçbir Şey Bulunamadı.\n\nBaşka bir anahtarlık deneyin veya belki düzgün heceleyin."
         )
         print(str(e))
         return
-    m.edit("Downloading...")
+    m.edit("Indiriyor...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
