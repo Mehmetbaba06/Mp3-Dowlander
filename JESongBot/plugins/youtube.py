@@ -19,7 +19,7 @@ s2tw = OpenCC('s2tw.json').convert
                    & filters.regex(YTDL_REGEX))
 async def ytdl_with_button(_, message: Message):
     await message.reply_text(
-        "**Click download button to download youtube url on audio format👇**",
+        "**Youtube url'sini ses formatına indirmek için indir düğmesine tıklayın👇**",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
