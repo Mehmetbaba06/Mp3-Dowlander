@@ -1,8 +1,4 @@
-# Infinity BOTs <https://t.me/Infinity_BOTs>
-# @ImJanindu
-
 import os
-
 import requests
 import wget
 from pyrogram import filters
@@ -22,7 +18,7 @@ def get_arg(message):
 async def song(client, message):
     message.chat.id
     message.from_user["id"]
-    args = get_arg(message) + " " + "song"
+    args = get_arg(message) + " " + "şarkı"
     if args.startswith(" "):
         await message.reply("<b>What is the song you want?</b>")
         return ""
