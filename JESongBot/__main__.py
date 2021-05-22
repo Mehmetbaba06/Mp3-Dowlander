@@ -6,22 +6,22 @@ from JESongBot import Jebot as app
 from JESongBot import LOGGER
 
 pm_start_text = """
-Heya [{}](tg://user?id={}), Ben Song Downloader Bot 🎵
+Heya [{}](tg://user?id={}), Ben Mp3 İndirme Botu 🎵
 
 yapmak /help komutlarımı bilmek için
 
-A bot by @EfsaneStar
+A Sahip by @EfsaneStar
 """
 
 help_text = """
 Komutlarım👇
 
-- /song <song name>: Youtube üzerinden şarkı indirme
+- /bul <song name>: Youtube üzerinden şarkı indirme
 - /saavn <song name>: JioSaavn üzerinden şarkı indirme
 - /deezer <song name>: Deezer aracılığıyla şarkı indirmek
 - Ses formatında indirmek için pm'ime youtube url'si gönder
 
-A bot by @EfsaneStar
+A Sahip by @EfsaneStar
 """
 
 @app.on_message(filters.command("start"))
