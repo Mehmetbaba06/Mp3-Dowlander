@@ -1,5 +1,3 @@
-# Credits for @TheHamkerCat for his William Butcher Bot
-
 import os
 from random import randint
 
