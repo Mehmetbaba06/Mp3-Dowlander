@@ -34,11 +34,11 @@ async def download_song(url):
 @app.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
-        await message.reply_text("What's the song you want to download 🧐")
+        await message.reply_text("İndirmek istediğiniz şarkı nedir?🧐")
         return
     text = message.text.split(None, 1)[1]
     query = text.replace(" ", "%20")
-    m = await message.reply_text("Searching...")
+    m = await message.reply_text("araştırıcı...")
     try:
         r = await fetch(f"{ARQ}deezer?query={query}&count=1")
         title = r[0]["title"]
@@ -47,9 +47,9 @@ async def deezer(_, message):
     except Exception as e:
         await m.edit(str(e))
         return
-    await m.edit("Downloading...")
+    await m.edit("Indiriyor...")
     song = await download_song(url)
-    await m.edit("Uploading...")
+    await m.edit("Yükleme...")
     await message.reply_audio(audio=song, title=title, performer=artist)
     os.remove(song)
     await m.delete()
