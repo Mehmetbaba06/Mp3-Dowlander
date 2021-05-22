@@ -1,6 +1,6 @@
 {
-    "name": "JE Song Bot",
-    "description": "A bot that can download songs.",
+    "name": "Efsane  Bot",
+    "description": "A şarkıları indirebilen bot.",
     "logo": "https://telegra.ph/file/172120c93b52738be277b.jpg",
     "keywords": [
         "JESongBot",
@@ -9,8 +9,8 @@
         "JE Bots"
     ],
     "website": "https://infinityje.com",
-    "repository": "https://github.com/ImJanindu/JESongBot",
-    "success_url": "https://t.me/Infinity_BOTs",
+    "repository": "https://github.com/Mehmetbaba06/Deezerbot",
+    "success_url": "https://t.me/EfsaneStar",
     "env": {
         "BOT_TOKEN": {
             "description": "Your Telegram Bot Token from @BotFather",
