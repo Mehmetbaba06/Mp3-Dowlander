@@ -1,5 +1,5 @@
 # EfsaneStar Bot
-## A şarkıları indirebilen telgraf botu
+## Şarkıları indirebilen telgraf botu
 <p align="center">
   <img src="https://telegra.ph/file/172120c93b52738be277b.jpg">
 </p>
