@@ -6,9 +6,9 @@ from JESongBot import Jebot as app
 from JESongBot import LOGGER
 
 pm_start_text = """
-Heya [{}](tg://user?id={}), Ben Mp3 İndirme Botu 🎵
+Merhaba [{}](tg://user?id={}), Ben Mp3 İndirme Botu 🎵
 
-Komuta basınız >> /help komutlarımı bilmek için 😎
+Basınız >> /help komutlarımı bilmek için 😎
 
 Destek Kanalı @SohbetDestek 🏷️
 """
