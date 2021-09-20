@@ -21,7 +21,7 @@ async def song(client, message):
     message.from_user["id"]
     args = get_arg(message) + " " + "şarkı"
     if args.startswith(" "):
-        await message.reply("<b>What is the song you want?</b>")
+        await message.reply("<b>İstediğiniz şarkı nedir?</b>")
         return ""
     m = await message.reply_text("Indiriyor...")
     try:
