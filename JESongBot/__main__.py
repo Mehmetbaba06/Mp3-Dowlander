@@ -10,18 +10,16 @@ Heya [{}](tg://user?id={}), Ben Mp3 İndirme Botu 🎵
 
 yapmak /help komutlarımı bilmek için
 
-A Sahip by @EfsaneStar
+Destek Kanalı @SohbetDestek 🏷️
 """
 
 help_text = """
 Komutlarım👇
 
 - /bul <song name>: Youtube üzerinden şarkı indirme
-- /saavn <song name>: JioSaavn üzerinden şarkı indirme
-- /deezer <song name>: Deezer aracılığıyla şarkı indirmek
 - Ses formatında indirmek için pm'ime youtube url'si gönder
 
-A Sahip by @EfsaneStar
+Destek Kanalı @SohbetDestek 🏷️
 """
 
 @app.on_message(filters.command("start"))
@@ -34,10 +32,10 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Owner", url="https://t.me/EfsaneStar"
+                        text="Kanal 📣", url="https://t.me/Sohbetdestek"
                     ),
                     InlineKeyboardButton(
-                        text="Dev Mp3", url="https://t.me/kanalEfsanestar"
+                        text="Müzik Kanalı 🎶", url="https://t.me/kanalEfsanestar"
                     )
                 ]
             ]
@@ -51,5 +49,5 @@ async def start(client, message):
     await message.reply(help_text)
 
 app.start()
-LOGGER.info("EfsaneStar yayında.")
+LOGGER.info("Mp3 Dowlander Hazır.")
 idle()
