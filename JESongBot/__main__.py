@@ -8,7 +8,7 @@ from JESongBot import LOGGER
 pm_start_text = """
 Heya [{}](tg://user?id={}), Ben Mp3 İndirme Botu 🎵
 
-yapmak /help komutlarımı bilmek için
+Komuta basınız >> /help komutlarımı bilmek için 😎
 
 Destek Kanalı @SohbetDestek 🏷️
 """
@@ -16,8 +16,8 @@ Destek Kanalı @SohbetDestek 🏷️
 help_text = """
 Komutlarım👇
 
-- /bul <song name>: Youtube üzerinden şarkı indirme
-- Ses formatında indirmek için pm'ime youtube url'si gönder
+- /bul <şarkı İsmi>: Youtube üzerinden şarkı indirme (Demet Akalın - Çalkala) gibi yazınız. 
+- Ses formatında indirmek için pm'ime youtube url'si gönder.. 
 
 Destek Kanalı @SohbetDestek 🏷️
 """
